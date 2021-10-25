@@ -1,0 +1,92 @@
+import React, { Component } from 'react';
+import Footer from './Footer';
+import { Card, Button, Row, Col, Alert } from 'react-bootstrap';
+
+  
+  
+  
+
+export default class About extends Component {
+    render() {
+        return (
+            <div>
+              {/*About me Intro*/}
+                <Card className="text-center">
+                  <Card.Header><h3>About Me</h3></Card.Header>
+                  <Card.Body>
+                    <Card.Title>Looking For A Web Developer?</Card.Title>
+                      <Card.Text>
+                      I'M MAJD... PROGRAMMER &amp; A FRONT-END WEB DEVELOPER WHICH BUILDS WEBSITE'S FRAMEWORK USING SOFTWARE LIKE JAVASCRIPT BASED IN BEIRUT, LEBANON.<br/>
+                      I ENJOY BUILDING EVERYTHING FROM SMALL BUSINESS SITES TO RICH INTERACTIVE WEB APPS, <br/>
+                      If you are a Business Seeking a Web Presence or an Employer Looking to Hire, you can get in Touch With me.
+                      </Card.Text>
+                    <Button href="/contact">Contact Me</Button>
+                  </Card.Body>
+                </Card>
+                
+
+                {/* cards for other skills */}
+                <Alert>
+                  <center>
+                  <h4>Some Other Skills &amp; Experiences</h4>
+                  </center>
+                </Alert>
+                <center style={{margin:"15px"}}>
+                <Row xs={1} md={2} className="g-4">
+                {Array.from({ length: 1 }).map((_, idx) => (
+                <Col>
+                  <Card style={{ width: '24rem' }}>
+                  <Card.Img variant="top" src="./images/lotw.jpg" alt="LOTW" style={{ height: '216px'}}/>
+                    <Card.Body>
+                    <Card.Title>Worked as a waiter at Lord Of The Wings LEB</Card.Title>
+                    <Button href="https://www.instagram.com/lordofthewings_lb/"
+                        target="_blank" rel="noreferrer"><strong>Follow LOTW</strong></Button>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                ))}
+
+                {Array.from({ length: 1 }).map((_, idx) => (
+                <Col>
+                  <Card style={{ width: '24rem' }}>
+                  <Card.Img variant="top" src="./images/marketing.jpeg" alt="Marketing"/>
+                    <Card.Body>
+                    <Card.Title>Marketing representative</Card.Title>
+                  </Card.Body>
+                  </Card>
+                </Col>
+                ))}
+
+                {Array.from({ length: 1 }).map((_, idx) => (
+                <Col>
+                  <Card style={{ width: '24rem'}}>
+                  <Card.Img variant="top" src="./images/guitar1.jpg" alt="guitar" style={{ height: '216px'}}/>
+                  <Card.Body>
+                  <Card.Title>Guitarist</Card.Title>
+                  </Card.Body>
+                  </Card>
+                </Col>
+                ))}
+
+                {Array.from({ length: 1 }).map((_, idx) => (
+                <Col>
+                  <Card style={{ width: '24rem' }}>
+                  <Card.Img variant="top" src="./images/piano.jpg"/>
+                  <Card.Body>
+                  <Card.Title>Pianist</Card.Title>
+                  </Card.Body>
+                  </Card>
+                </Col>
+                ))}
+                </Row>
+                  </center>
+                
+                
+                
+
+
+                <Footer />
+            </div>
+        );
+    }
+}
