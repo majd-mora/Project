@@ -87,7 +87,7 @@ export default class Home extends Component {
                 </center>
                 <br/>
                 <div className="d-flex justify-content-around">
-                <Card style={{ width: '24rem' }}>
+                <Card>
                   <Card.Img variant="top" src="./courses/digital.png" alt="digital-literacy"/>
                   <Card.Body>
                     <Card.Title>Digital Literacy</Card.Title>
