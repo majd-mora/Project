@@ -40,49 +40,26 @@ class NavBar extends Component {
                     
 
                     <Switch>
-
                     
-
                     
-
                     <Route path="/About">
-                    
                     <About />
-
                     </Route>
-
                     
-
                     <Route path="/Contact">
-
                     <Contact />
-
                     </Route>
-
-                    
 
                     <Route path="/">
-
                     <Home />
-
                     </Route>
-
                     
 
-                    </Switch>
-
-                
-                
-                
-
+                    </Switch>    
                 </div>
-
             </BrowserRouter>
-
         );
-
     }
-
 }
 
   

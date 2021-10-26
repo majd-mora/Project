@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
 import Footer from './Footer';
 import { Card, Button, Badge } from 'react-bootstrap';
-// import Ripples from 'react-ripples';
 
 
   
