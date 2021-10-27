@@ -41,6 +41,7 @@ code {
 
 .caption h5 {
   font-size: 45px;
+  font-family:'Courier New', Courier, monospace;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 25px;
@@ -53,9 +54,13 @@ code {
   margin: auto;
   font-size: 22px;
   line-height: 1.9;
-  font-family: poppins;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   animation-delay: 1.2s;
   font-weight: bold;
+}
+
+.courses {
+  font-family:'Times New Roman', Times, serif;
 }
 
 

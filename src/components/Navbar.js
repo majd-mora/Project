@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import {
-HashRouter,
+BrowserRouter,
 Switch,
 Route
 } from 'react-router-dom';
@@ -9,19 +9,21 @@ import Home from './Home';
 import Contact from './Contact';
 import About from './About';
 
-  
+// importing logo.png
+
+import logo from '../navlogo/logo.png';
 
 class NavBar extends Component {
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter basename="/Home">
                 <div>
                     <Navbar bg="dark" variant="dark" fixed>
                         <Container>
                         <Navbar bg="dark" className="navbar-dark">
                         <Container>
                         <Navbar.Brand href="/home">
-                        <img src="./navlogo/logo.png" width="50" height="50" className="d-inline-block align-top"
+                        <img src={logo} width="50" height="50" className="d-inline-block align-top"
                             alt="React Bootstrap logo" href="/home"/>
                         </Navbar.Brand>
                         <Navbar.Brand href="/home" className="me-auto" class="navbar-brand">M.MORA</Navbar.Brand>
@@ -42,22 +44,19 @@ class NavBar extends Component {
                     <Switch>
                     
                     
-                    <Route path="/About">
-                    <About />
-                    </Route>
-                    
-                    <Route path="/Contact">
-                    <Contact />
-                    </Route>
+                    <Route exact path="/about" render={ () => <About title='About' /> } />
 
-                    <Route path="/">
-                    <Home />
-                    </Route>
+                    
+                    <Route exact path="/contact" render={ () => <Contact title='Contact' /> } />
+
+
+                    <Route exact path="/" component={Home} />
+
                     
 
                     </Switch>    
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }

@@ -3,6 +3,22 @@ import { Carousel } from 'react-bootstrap';
 import Footer from './Footer';
 import { Card, Button, Badge } from 'react-bootstrap';
 
+// importing images (carousels and cards)
+
+import img1 from '../images/sky.jpg';
+import img2 from '../images/road.jpg';
+import img3 from '../images/coding.jpg';
+import img4 from '../images/mac.jpg';
+import img5 from '../images/nasa.jpg';
+import img6 from '../images/mountain.jpg';
+import img7 from '../images/codecoffee.jpg';
+import img8 from '../courses/digital.png';
+import img9 from '../courses/webdesign.jpg';
+import img10 from '../courses/frontend.webp';
+import img11 from '../courses/react.jpg';
+
+
+
 
   
   
@@ -14,7 +30,7 @@ export default class Home extends Component {
               <Carousel fade>
                 <Carousel.Item class="carItem">
                   <img className="d-block w-100"
-                    src="./images/sky.jpg"
+                    src= {img1}
                     alt="First slide" height="605px" width="240px"/>
                   <Carousel.Caption className="caption">
                     <h5 class="animate__animated animate__fadeInDown">Inquisitiveness</h5>
@@ -24,7 +40,7 @@ export default class Home extends Component {
                 <Carousel.Item class="carItem">
                   <img
                     className="d-block w-100"
-                    src="./images/road.jpg" height="605px" width="240px"
+                    src={img2} height="605px" width="240px"
                     alt="First slide"/>
                   <Carousel.Caption className="caption">
                     <h5 class="animate__animated animate__backInRight">Self-motivation</h5>
@@ -33,7 +49,7 @@ export default class Home extends Component {
                 </Carousel.Item>
                 <Carousel.Item class="carItem">
                   <img className="d-block w-100"
-                    src="./images/coding.jpg" height="605px" width="240px"
+                    src={img3} height="605px" width="240px"
                     alt="First slide"/>
                   <Carousel.Caption className="caption">
                     <h5 class="animate__animated animate__fadeInUp">Perseverance</h5>
@@ -42,7 +58,7 @@ export default class Home extends Component {
                 </Carousel.Item>
                 <Carousel.Item class="carItem">
                   <img className="d-block w-100"
-                    src="./images/mac.jpg" height="605px" width="240px"
+                    src={img4} height="605px" width="240px"
                     alt="First slide"/>
                   <Carousel.Caption className="caption">
                     <h5 class="animate__animated animate__lightSpeedInRight">Proficiency with programming languages</h5>
@@ -51,7 +67,7 @@ export default class Home extends Component {
                 </Carousel.Item>
                 <Carousel.Item class="carItem">
                   <img className="d-block w-100"
-                    src="./images/nasa.jpg" height="605px" width="240px"
+                    src={img5} height="605px" width="240px"
                     alt="Second slide"/>
                   <Carousel.Caption className="caption">
                     <h5 class="animate__animated animate__zoomIn">Learning concepts and applying them to other problems</h5>
@@ -60,7 +76,7 @@ export default class Home extends Component {
                 </Carousel.Item>
                 <Carousel.Item class="carItem">
                   <img className="d-block w-100"
-                    src="./images/mountain.jpg" height="605px" width="240px"
+                    src={img6} height="605px" width="240px"
                     alt="First slide"/>
                   <Carousel.Caption className="caption">
                     <h5 class="animate__animated animate__slideInUp">Problem-solving capability</h5>
@@ -70,7 +86,7 @@ export default class Home extends Component {
                 </Carousel.Item>
                 <Carousel.Item class="carItem">
                   <img className="d-block w-100"
-                    src="./images/codecoffee.jpg" height="605px" width="240px"
+                    src={img7} height="605px" width="240px"
                     alt="First slide"/>
                   <Carousel.Caption className="caption">
                     <h5 class="animate__animated animate__rollIn">Communication skills</h5>
@@ -83,12 +99,12 @@ export default class Home extends Component {
                 {/**Cards: Courses I've Learned */}
 
                 <center style={{margin:"15px"}}>
-                <Badge bg="secondary"><h3>Courses I've Learned from Teamtreehouse Technology School</h3></Badge>
+                <Badge bg="secondary"><h3 className="courses">Courses I've Learned from Teamtreehouse Technology School</h3></Badge>
                 </center>
                 <br/>
                 <div className="d-flex justify-content-around">
                 <Card>
-                  <Card.Img variant="top" src="./courses/digital.png" alt="digital-literacy"/>
+                  <Card.Img variant="top" src={img8} alt="digital-literacy"/>
                   <Card.Body>
                     <Card.Title>Digital Literacy</Card.Title>
                     <Card.Text>
@@ -103,7 +119,7 @@ export default class Home extends Component {
                 
 
                 <Card style={{ width: '24rem' }}>
-                  <Card.Img variant="top" src="./courses/webdesign.jpg" alt="web-design" style={{ height: '218px'}}/>
+                  <Card.Img variant="top" src={img9} alt="web-design" style={{ height: '218px'}}/>
                   <Card.Body>
                     <Card.Title>Web Design</Card.Title>
                       <Card.Text>
@@ -120,7 +136,7 @@ export default class Home extends Component {
 
                 <div className="d-flex justify-content-around">
                 <Card style={{ width: '24rem' }}>
-                  <Card.Img variant="top" src="./courses/frontend.webp" alt="front-end development" style={{ height: '214px'}}/>
+                  <Card.Img variant="top" src={img10} alt="front-end development" style={{ height: '214px'}}/>
                   <Card.Body>
                     <Card.Title>Front End Web Development</Card.Title>
                       <Card.Text>
@@ -133,7 +149,7 @@ export default class Home extends Component {
 
 
                 <Card style={{ width: '24rem' }}>
-                  <Card.Img variant="top" src="./courses/react.jpg" alt="react"/>
+                  <Card.Img variant="top" src={img11} alt="react"/>
                     <Card.Body>
                       <Card.Title>React</Card.Title>
                       <Card.Text>

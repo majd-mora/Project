@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import Footer from './Footer';
 import { Card, Button, Row, Col, Alert } from 'react-bootstrap';
 
-  
-  
-  
+
+// importing skills images
+import img1 from '../images/lotw.jpg';
+import img2 from '../images/marketing.jpeg';
+import img3 from '../images/guitar.jpg';
+import img4 from '../images/piano.jpg';
+
 
 export default class About extends Component {
     render() {
@@ -36,7 +40,7 @@ export default class About extends Component {
                 {Array.from({ length: 1 }).map((_, idx) => (
                 <Col>
                   <Card style={{ width: '24rem' }}>
-                  <Card.Img variant="top" src="./images/lotw.jpg" alt="LOTW" style={{ height: '216px'}}/>
+                  <Card.Img variant="top" src={img1} alt="LOTW" style={{ height: '216px'}}/>
                     <Card.Body>
                     <Card.Title>Worked as a waiter at Lord Of The Wings LEB</Card.Title>
                     <Button href="https://www.instagram.com/lordofthewings_lb/"
@@ -49,7 +53,7 @@ export default class About extends Component {
                 {Array.from({ length: 1 }).map((_, idx) => (
                 <Col>
                   <Card style={{ width: '24rem' }}>
-                  <Card.Img variant="top" src="./images/marketing.jpeg" alt="Marketing"/>
+                  <Card.Img variant="top" src={img2} alt="Marketing"/>
                     <Card.Body>
                     <Card.Title>Marketing representative</Card.Title>
                   </Card.Body>
@@ -60,7 +64,7 @@ export default class About extends Component {
                 {Array.from({ length: 1 }).map((_, idx) => (
                 <Col>
                   <Card style={{ width: '24rem'}}>
-                  <Card.Img variant="top" src="./images/guitar1.jpg" alt="guitar" style={{ height: '216px'}}/>
+                  <Card.Img variant="top" src={img3} alt="guitar" style={{ height: '216px'}}/>
                   <Card.Body>
                   <Card.Title>Guitarist</Card.Title>
                   </Card.Body>
@@ -71,7 +75,7 @@ export default class About extends Component {
                 {Array.from({ length: 1 }).map((_, idx) => (
                 <Col>
                   <Card style={{ width: '24rem' }}>
-                  <Card.Img variant="top" src="./images/piano.jpg"/>
+                  <Card.Img variant="top" src={img4} alt="piano"/>
                   <Card.Body>
                   <Card.Title>Pianist</Card.Title>
                   </Card.Body>
