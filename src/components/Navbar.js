@@ -44,13 +44,19 @@ class NavBar extends Component {
                     <Switch>
                     
                     
-                    <Route exact path="/about" render={ () => <About title='About' /> } />
+                    <Route path="/About">
+                        <About />
+                    </Route>
 
                     
-                    <Route exact path="/contact" render={ () => <Contact title='Contact' /> } />
+                    <Route path="/Contact">
+                        <Contact />
+                    </Route>
 
 
-                    <Route exact path="/" component={Home} />
+                    <Route path="/">
+                        <Home />
+                    </Route>
 
                     
 
