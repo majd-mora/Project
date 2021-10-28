@@ -54,7 +54,7 @@ code {
   margin: auto;
   font-size: 22px;
   line-height: 1.9;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Courier New', Courier, monospace;
   animation-delay: 1.2s;
   font-weight: bold;
 }
