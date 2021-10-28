@@ -16,7 +16,7 @@ import logo from '../navlogo/logo.png';
 class NavBar extends Component {
     render() {
         return (
-            <BrowserRouter basename="/Home">
+            <BrowserRouter>
                 <div>
                     <Navbar bg="dark" variant="dark" fixed>
                         <Container>
