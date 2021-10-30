@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import {
-HashRouter,
+BrowserRouter,
 Switch,
 Route
 } from 'react-router-dom';
@@ -16,7 +16,7 @@ import logo from '../navlogo/logo.png';
 class NavBar extends Component {
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div>
                     <Navbar bg="dark" variant="dark" fixed>
                         <Container>
@@ -62,7 +62,7 @@ class NavBar extends Component {
 
                     </Switch>    
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }
