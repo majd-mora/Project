@@ -7,7 +7,7 @@ import NavBar from './components/Navbar';
 class App extends Component {
     render() {
         return (
-            <div>
+            <div style={{width: 'auto'}}>
                 <NavBar />
             </div>
         );

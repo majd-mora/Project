@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import {Navbar, Container, Nav} from 'react-bootstrap';
-import {
-BrowserRouter,
-Switch,
-Route
-} from 'react-router-dom';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Contact from './Contact';
 import About from './About';
@@ -18,8 +14,8 @@ class NavBar extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Navbar bg="dark" variant="dark" fixed>
-                        <Container>
+                    <Navbar expand="md" bg="dark" variant="dark" fixed>
+                        <Container fluid>
                         <Navbar bg="dark" className="navbar-dark">
                         <Container>
                         <Navbar.Brand href="/home">
@@ -29,11 +25,11 @@ class NavBar extends Component {
                         <Navbar.Brand href="/home" className="me-auto" class="navbar-brand">M.MORA</Navbar.Brand>
                         </Container>
                     </Navbar>
-                        <Nav className="ml-auto, navbar">
-                        <Nav.Link href="/home">Home</Nav.Link>
-                        <Nav.Link href="/about">About</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
-                        </Nav>
+                            <Nav className="ml-auto, navbar">
+                            <Nav.Link href="/home">Home</Nav.Link>
+                            <Nav.Link href="/about">About</Nav.Link>
+                            <Nav.Link href="/contact">Contact</Nav.Link>
+                            </Nav>
                         </Container>
                     </Navbar>
                 </div>

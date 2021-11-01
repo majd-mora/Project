@@ -20,8 +20,9 @@ export default class About extends Component {
                   <Card.Body>
                     <Card.Title>Looking For A Web Developer?</Card.Title>
                       <Card.Text>
-                      I'M MAJD... PROGRAMMER &amp; A FRONT-END WEB DEVELOPER WHICH BUILDS WEBSITE'S FRAMEWORK USING SOFTWARE LIKE JAVASCRIPT BASED IN BEIRUT, LEBANON.<br/>
-                      I ENJOY BUILDING EVERYTHING FROM SMALL BUSINESS SITES TO RICH INTERACTIVE WEB APPS, <br/>
+                      I'M MAJD... Programmer &amp; A Front-End Web Developer who builds Website's Framework using Software Like JavaScript based in Beirut, Lebanon.<br/>
+                      I enjoy building everything from small business sites to rich Interactive Web Apps,
+                      and also coding on ReactJS and dreaming on ReactJS. Help companies to build complex web applications serving 1,000,000+ users with React and modern technologies.<br/>
                       If you are a Business Seeking a Web Presence or an Employer Looking to Hire, you can get in Touch With me.
                       </Card.Text>
                     <Button href="/contact">Contact Me</Button>
@@ -42,7 +43,7 @@ export default class About extends Component {
                   <Card style={{ width: '24rem' }}>
                   <Card.Img variant="top" src={img1} alt="LOTW" style={{ height: '216px'}}/>
                     <Card.Body>
-                    <Card.Title>Worked as a waiter at Lord Of The Wings LEB</Card.Title>
+                    <Card.Title>Worked as a waiter and sales man at Lord Of The Wings LEB</Card.Title>
                     <Button href="https://www.instagram.com/lordofthewings_lb/"
                         target="_blank" rel="noreferrer"><strong>Follow LOTW</strong></Button>
                     </Card.Body>

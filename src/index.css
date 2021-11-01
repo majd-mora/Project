@@ -26,6 +26,8 @@ code {
 }
 
 
+
+
 /* Captions Home.file */
 
 .btn:hover {
@@ -69,6 +71,7 @@ code {
 
 
 .navbar {
+  display: none;
   font-family: poppins;
   font-size: 18px;
   text-transform: uppercase;
@@ -82,6 +85,7 @@ code {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
 
 /* Responsive */
 
@@ -99,25 +103,20 @@ code {
 
 /* Contact.file */
 
-/* .text-block-contact {
-  position: absolute;
-  bottom: 50%;
-  color: white;
-  padding-left: 100px;
-  padding-right: 100px;
-} */
 
 .cont-img {
   height: 86vh;
 }
 
-.text-block-contact {
+.res-contact {
   position: absolute;
-  margin-left: 25%;
-  top: 20%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-block-contact {
   color: white;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 
@@ -134,8 +133,9 @@ code {
 
 .font-contact {
   font-size: 22px;
-  font-family: serif;
+  font-family: cursive;
 }
+
 
 
 

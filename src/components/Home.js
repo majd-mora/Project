@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
 import Footer from './Footer';
 import { Card, Button, Badge } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 // importing images (carousels and cards)
 
@@ -98,12 +99,20 @@ export default class Home extends Component {
                 
                 {/**Cards: Courses I've Learned */}
 
+
+
+                
                 <center style={{margin:"15px"}}>
-                <Badge bg="secondary"><h3 className="courses">Courses I've Learned from Teamtreehouse Technology School</h3></Badge>
+                <Badge bg="secondary"><h3 className="courses">Courses I've Learned from<br/> Teamtreehouse Technology School</h3></Badge>
                 </center>
                 <br/>
+
                 <div className="d-flex justify-content-around">
-                <Card>
+                  <center>
+              <Container>
+                <Row>
+                  <Col>
+                <Card style={{ width: '26rem' }}>
                   <Card.Img variant="top" src={img8} alt="digital-literacy"/>
                   <Card.Body>
                     <Card.Title>Digital Literacy</Card.Title>
@@ -116,9 +125,11 @@ export default class Home extends Component {
                      target="_blank" rel="noreferrer" className="btn">Learn More</Button>
                   </Card.Body>
                 </Card>
-                
+                </Col>
 
-                <Card style={{ width: '24rem' }}>
+
+              <Col>
+                <Card style={{ width: '26rem' }}>
                   <Card.Img variant="top" src={img9} alt="web-design" style={{ height: '218px'}}/>
                   <Card.Body>
                     <Card.Title>Web Design</Card.Title>
@@ -130,12 +141,12 @@ export default class Home extends Component {
                     <Button variant="primary" href="https://teamtreehouse.com/tracks/web-design" target="_blank" rel="noreferrer">Learn More</Button>
                   </Card.Body>
                 </Card>
-                </div>
+                </Col>
                 <br/>
 
 
-                <div className="d-flex justify-content-around">
-                <Card style={{ width: '24rem' }}>
+                  <Col>
+                <Card style={{ width: '26rem' }}>
                   <Card.Img variant="top" src={img10} alt="front-end development" style={{ height: '214px'}}/>
                   <Card.Body>
                     <Card.Title>Front End Web Development</Card.Title>
@@ -146,9 +157,11 @@ export default class Home extends Component {
                     target="_blank" rel="noreferrer">Learn More</Button>
                   </Card.Body>
                 </Card>
+                </Col>
 
 
-                <Card style={{ width: '24rem' }}>
+              <Col>
+                <Card style={{ width: '26rem' }}>
                   <Card.Img variant="top" src={img11} alt="react"/>
                     <Card.Body>
                       <Card.Title>React</Card.Title>
@@ -158,9 +171,12 @@ export default class Home extends Component {
                     <Button variant="primary" href="https://teamtreehouse.com/tracks/learn-react" target="_blank" rel="noreferrer">Learn More</Button>
                     </Card.Body>
                 </Card>
+                </Col>
+                </Row>
+                </Container>
+                </center>
                 </div>
-                <hr/>
-                
+                             
                 
                 
                 <Footer />
