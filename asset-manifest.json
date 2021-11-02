@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Project/static/css/main.756c737a.chunk.css",
-    "main.js": "/Project/static/js/main.c73b5835.chunk.js",
-    "main.js.map": "/Project/static/js/main.c73b5835.chunk.js.map",
-    "runtime-main.js": "/Project/static/js/runtime-main.657d285d.js",
-    "runtime-main.js.map": "/Project/static/js/runtime-main.657d285d.js.map",
+    "main.js": "/Project/static/js/main.12768fe3.chunk.js",
+    "main.js.map": "/Project/static/js/main.12768fe3.chunk.js.map",
+    "runtime-main.js": "/Project/static/js/runtime-main.eb456d76.js",
+    "runtime-main.js.map": "/Project/static/js/runtime-main.eb456d76.js.map",
     "static/css/2.e7e7ed59.chunk.css": "/Project/static/css/2.e7e7ed59.chunk.css",
-    "static/js/2.6f8ba925.chunk.js": "/Project/static/js/2.6f8ba925.chunk.js",
-    "static/js/2.6f8ba925.chunk.js.map": "/Project/static/js/2.6f8ba925.chunk.js.map",
-    "static/js/3.7abf6c27.chunk.js": "/Project/static/js/3.7abf6c27.chunk.js",
-    "static/js/3.7abf6c27.chunk.js.map": "/Project/static/js/3.7abf6c27.chunk.js.map",
+    "static/js/2.6a0381bb.chunk.js": "/Project/static/js/2.6a0381bb.chunk.js",
+    "static/js/2.6a0381bb.chunk.js.map": "/Project/static/js/2.6a0381bb.chunk.js.map",
+    "static/js/3.dd3ba943.chunk.js": "/Project/static/js/3.dd3ba943.chunk.js",
+    "static/js/3.dd3ba943.chunk.js.map": "/Project/static/js/3.dd3ba943.chunk.js.map",
     "index.html": "/Project/index.html",
     "static/css/2.e7e7ed59.chunk.css.map": "/Project/static/css/2.e7e7ed59.chunk.css.map",
     "static/css/main.756c737a.chunk.css.map": "/Project/static/css/main.756c737a.chunk.css.map",
-    "static/js/2.6f8ba925.chunk.js.LICENSE.txt": "/Project/static/js/2.6f8ba925.chunk.js.LICENSE.txt",
+    "static/js/2.6a0381bb.chunk.js.LICENSE.txt": "/Project/static/js/2.6a0381bb.chunk.js.LICENSE.txt",
     "static/media/codecoffee.e39f30ab.jpg": "/Project/static/media/codecoffee.e39f30ab.jpg",
     "static/media/coding.5987661a.jpg": "/Project/static/media/coding.5987661a.jpg",
     "static/media/digital.e7c210a6.png": "/Project/static/media/digital.e7c210a6.png",
@@ -39,10 +39,10 @@
     "static/media/whatsapp.1dd8ca27.png": "/Project/static/media/whatsapp.1dd8ca27.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.657d285d.js",
+    "static/js/runtime-main.eb456d76.js",
     "static/css/2.e7e7ed59.chunk.css",
-    "static/js/2.6f8ba925.chunk.js",
+    "static/js/2.6a0381bb.chunk.js",
     "static/css/main.756c737a.chunk.css",
-    "static/js/main.c73b5835.chunk.js"
+    "static/js/main.12768fe3.chunk.js"
   ]
 }
