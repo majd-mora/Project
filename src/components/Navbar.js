@@ -8,28 +8,27 @@ import About from './About';
 // importing logo.png
 
 import logo from '../navlogo/logo.png';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 class NavBar extends Component {
     render() {
         return (
             <BrowserRouter>
                 <div>
-                    <Navbar expand="md" bg="dark" variant="dark" fixed>
-                        <Container fluid>
-                        <Navbar bg="dark" className="navbar-dark">
+                    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                         <Container>
                         <Navbar.Brand href="/home">
                         <img src={logo} width="50" height="50" className="d-inline-block align-top"
                             alt="React Bootstrap logo" href="/home"/>
                         </Navbar.Brand>
-                        <Navbar.Brand href="/home" className="me-auto" class="navbar-brand">M.MORA</Navbar.Brand>
-                        </Container>
-                    </Navbar>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                            <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="ml-auto, navbar">
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link href="/contact">Contact</Nav.Link>
                             </Nav>
+                            </Navbar.Collapse>
                         </Container>
                     </Navbar>
                 </div>
